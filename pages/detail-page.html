@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Museum Guide</title>
+        <meta name="vieuwport" content="width-device-width, initial-scale=1">
+        <link rel ="stylesheet" type="text/css" media="screen" href="page.css">
+        <script src="detail-page.html"></script>
+    </head> 
+
+   <body>
+       <main>
+        <section id="content">
+         <p>Maya's Mobile Museum App</p>
+         <h1>Saint Remy June 1889 Canvas on oil</h1>
+               <img class="artObject" src="https://media.gettyimages.com/photos/saint-remy-june-1889-oil-on-canvas-29-x-36-14-inches-located-in-the-picture-id544182028?s=2048x2048" 
+               alt="Van Gogh painting" width="350">
+        </section>
+        <section id="comments">
+            <h2>Comments</h2>
+            <section class="comments">
+            <h3>Evelina Said:</h3>
+            <p>"I really love this painting!"</p>
+        </section>
+        </section>
+        
+        <form onsubmit="submitComment(); return fals">
+            <div class="formSection">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="button">
+                <button type="default">Post your comment</button>
+            </div>
+        </form>
+       </main>
+       <footer>
+            <p>Made in China! 😂😂</p>
+       </footer>
+   </body>
+</html>
