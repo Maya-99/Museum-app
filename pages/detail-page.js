@@ -14,10 +14,18 @@ function submitComment(){
     const commentText = document.createElement('p');
     commentHead.innerHTML = `${name} Said:`;
     commentText.innerHTML = msg;
-    commentBox.classList.add(CommentBox);
+    commentBox.classList.add(commentBox);
     commentBox.appendChild(commentHead);
     commentBox.appendChild(commentText);
     
     console.log(commentBox);
     
+    const commentSection = document.getElementById('comments');
+    commentSection.appendChild(comment);
+    inputField.value = null
+    textArea.value = null
+
+    console.log(commentSection);
+    
+
 }
